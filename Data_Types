@@ -1,0 +1,11 @@
+ -Integer is a number without decimals from Human mathematics.
+
+ -Float is a decimal number from human mathematics
+
+ -Char is anything you can type using a keyboard.
+ They are generally written inside single quotation marks.
+
+ -String is a collection of characters. They are usually enclosed in double quotes.
+
+ -Boolean is simply true or false. They have no quotation marks
+ because if you put quotation marks they would be recognized as a string.

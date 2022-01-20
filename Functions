@@ -1,0 +1,8 @@
+A function  in Rust is a block of code. Functions can be made by following
+the simple syntax.
+
+Ex: 
+
+fn function_name() {
+	[code here]
+}

@@ -1,0 +1,16 @@
+In Rust, it is possible to use conditional expressions to initialize variables. 
+Ex:
+
+fn main() {
+    let flag = false;
+    let number = if flag {10} else {2};
+
+    println!("The value of number is {}", number);
+}
+___________________________________________________
+
+This code is saying that if flag is true, then print the value 10.
+If flag is not true, then print the value 2.
+
+Keep in mind that if you do not use the else condition then the compiler
+won't compile the code.

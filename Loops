@@ -1,0 +1,47 @@
+In Rust, loops are a very useful tool if you need to repeat one line of code multiple
+times.
+
+Ex:
+
+fn main() {
+    loop{
+        println!("Hello");
+    }
+}
+_________________________________
+
+This will say hello over and over until you terminate the program.
+Although this code isn't very useful, it is a good way to demonstrate the loop.
+Lets bring more functionality into our loop.
+
+Using the while keyword, a loop can be run while a condition is true.
+
+Ex:
+
+fn main() {
+    let mut number = 0;
+
+    while number < 5 {
+        println!("The value of the number is more than {}", number);
+        number = number + 1
+    }
+}
+_______________________________________________________________________
+This will print the numbers 0, 1, 2, 3 and 4 and terminate when the number
+hits 5. This is because the loop only runs *while* the condition is true.
+(hence the name while)
+In this case the condition is that the number is less than 5. If you set
+the number to 100, it would print to 99. Once the condition is not met(the number
+becomes 5) then the condition is met and the program terminates (in this case).
+Put simply, this program adds +1 until the condition is met.
+
+Loops can also be broken with the break keyword.
+
+Ex: 
+
+fn main() {
+	loop{
+		println!("Hello");
+		break;
+	}
+}

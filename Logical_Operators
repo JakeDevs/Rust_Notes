@@ -1,0 +1,10 @@
+A boolean is simply true or false. 
+
+Ex: let bool = 3!=3;
+
+This is saying that 3 is not equal to 3, therefore the output would be false.
+
+The opposite would be: let bool2 = 3==3;
+
+If you put 3 <= 3; then it would be true because it is saying 3 is greater than OR
+equala to 3. Therefore it would be true because its not greater than but it is equal.

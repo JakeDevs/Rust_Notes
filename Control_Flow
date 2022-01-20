@@ -1,0 +1,15 @@
+Sequences, or sequencial way of thinking is basically how computers read. From
+top to bottom to left to right. This is the most basic form of programming.
+
+Conditions help us make decisions in a non linear way. 
+If the coniditon is true we do one thing otherwise we do something else.
+
+Loops will use conditions to decide how many times a code block will be repeated.
+Put simply, the code block will be repeated as long as the condition is true.
+For example, if you made a game where you have to guess a randomly generated number,
+The loop will keep repeating on the condition that you have guessed incorrectly.
+Once you have guessed correctly, the condition is now true so the loop will end.
+
+These three different flow controls come together to create a computer program.
+If you take any computer program, you can break it down into Sequences, Conditions,
+and Loops. This is Control Flow.

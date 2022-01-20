@@ -1,0 +1,41 @@
+Variables are, explained simply, boxes that can store values. 
+The benefit of using a variable is that the value of that variable can change
+throughout the program.
+
+To create a variable, the proper syntax is:
+
+fn main() {
+    let variable_name = 1;	
+}
+
+This creates a variable.
+
+-Variable names cannot start with numbers and cannot contain spaces.
+A good solution if you need spacing is underscore or camelcase.
+
+Camelcase: variableName
+
+Underscore: variable_name
+
+These are two great ways to seperate words in Rust.
+
+In Rust you can also add two variables together or subtract or divide or multiply.
+
+Ex:
+
+	let num1 = 5;
+	let num2= 10;
+	let sum = num1 + num2;
+
+____________________________________________
+
+
+Variables by default are not mutable but can become mutable if you add mut 
+to the syntax.
+
+Ex: let mut x = 10;
+
+On the opposite end of the spectrum, there is constants. Constants, unlike variables,
+do not change throughout the program.
+
+Ex: const pi:f32 = 3.14;

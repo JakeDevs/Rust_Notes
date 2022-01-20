@@ -1,0 +1,57 @@
+The if expression in Rust will execute a block of code only if an expression is true.
+For example, 3==3, which means that 3 is equal to 3 is true. Therefore, the codeblock
+will run. However, if you do 3<3 then the codeblock will not run because 3 is not
+greater than 3. 
+
+Ex: 
+
+fn main() {
+    if 3 == 3 {
+        println!("3 is, in fact, equal to 3.");
+    }
+}
+
+_______________________________________________
+
+
+To add on, you can use the else is expression. The else expression will execute 
+a different codeblock only if the expression is true. 
+
+Ex: 
+
+fn main() {
+    if 3 > 3 {
+        println!("This is true!");
+    } else {
+        println!("This is false.");
+    }
+}
+___________________________________
+
+If the expression is true, then it will print that it is true.
+If its false, then it will print that it is false.
+
+You can also plug in a variable. If the variable is = to x then the expression is
+true. If it isn't then it is not true. These will execute seperate code blocks.
+
+There is also the else if expression. This allows more choice in the program.
+
+Ex: 
+
+fn main() {
+    let var = 5;
+
+    if var == 5 {
+        println!("variable is equal to 5");
+    }
+    else if var == 10 {
+        println!("variable is equal to 10");
+    }
+    else {
+        println!("variable is not equal to 5 or 10");
+    }
+}
+__________________________________________________________
+
+Else if is faster than using if multiple times because if any of the statements 
+are true, then the code will not execute the other code and it will be faster.

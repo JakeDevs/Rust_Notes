@@ -1,0 +1,22 @@
+Although an integer is a datatype in rust, all integers fall under sub types.
+__________________
+Signed|  Unsigned |
+i8    |    u8     |
+i16   |   u16     |
+i32   |   u32     |
+i64   |   u64     |
+i128  |   u128    |
+isize |   usize   |
+______|___________|
+
+If you do not specify the subtype, it will by default use i32.
+
+OPTIMIZATION
+
+If you are using a small value for a variable, it is important
+to downsize the bit depth to something like u8 or i8. This will optimize your
+program. Every bit counts!
+
+Ex:
+
+	let variable_name:u8 = 1;
