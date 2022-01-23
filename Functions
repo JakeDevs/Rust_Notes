@@ -1,8 +1,15 @@
-A function  in Rust is a block of code. Functions can be made by following
-the simple syntax.
+A function in Rust is a block of code. Functions can be made by following
+the simple syntax
 
 Ex: 
 
-fn function_name() {
-	[code here]
+fn main() {
+    times_two();
 }
+
+fn times_two() {
+    let x = 5;
+    println!("{}", x * 2);
+}
+
+The function here would be fn function_Name.
