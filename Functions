@@ -1,15 +1,61 @@
-A function in Rust is a block of code. Functions can be made by following
-the simple syntax
+In order to master functions, we need to know what a few things are:
 
-Ex: 
+Function definition:
+
+The function definition contains everything inside the function.
+Ex:
+
+fn cool_func(){
+
+}
+
+You would write code between the brackets.
+
+A function call is when you call a function from inside another function.
+
+Ex:
 
 fn main() {
-    times_two();
+	second_func();
 }
 
-fn times_two() {
-    let x = 5;
-    println!("{}", x * 2);
+Return Type:
+
+To return a value from a function, you need to create a return type. For example, i32.
+
+You can see it in the example below. 
+                                                                
+We can also declare a function as a variable, Also seen in the example below.
+
+Ex: 
+fn main() {
+    let number = times_two();
+    println!("The value of number is {}", number);
 }
 
-The function here would be fn function_Name.
+fn times_two() -> i8 {
+   let x = 10;
+   x*2 
+}
+
+Notice the x*2 does not have a semicolon attached to it. This is because of a unique behavior in Rust where
+declaring something like x*2 will be sent back to the function call.
+
+Function parameters:
+
+Inside a function, you can add parameters.
+Ex:
+
+fn main() {
+    let number = times_two(10);
+    println!("The value of number is {}", number);
+}
+
+fn times_two(x:i8) -> i8 {
+   x *2 
+}
+
+Notice how we declare the value of the function in the parenthesis and then
+declare a variable in the code block of times_two by adding the variable name x and the type i8.
+Then we multiply it by 2 with x *2. This is an example of function parameters. You can also add additional parameters.
+The parameters must match for the function call and the function itself. Parameters are also called arguments.
