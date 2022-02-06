@@ -1,0 +1,50 @@
+Today, we will learn how to read input from the user.
+
+First, we will create an empty string for our user to input text into.
+This can be done with the String module.
+Ex:
+
+fn main() {
+    
+    let mut text = String::new();
+}
+_________________________________
+
+Then we can actually add the user input by adding the stdin structure
+and using the .read_line function to the structure. Then we use the 
+.expect function to handle errors.
+
+Then we add a println to print the output of the user.
+
+Ex:
+
+fn main() {
+    println!("Say what you wish. I will predict it.");
+    let mut text = String::new();
+
+    std::io::stdin().read_line(&mut text).expect("Failed to read line.");
+
+    println!("{}", text);
+}
+
+Now we can go even farther by converting the string into a number and doubling
+the input of the number at the end.
+
+
+fn main() {
+    println!("Say what you wish. I will predict it.");
+    let mut text = String::new();
+
+    std::io::stdin().read_line(&mut text).expect("Failed to read line.");
+
+
+
+     let number:u32 = text.trim().parse().expect("Conversion failed, please enter a number.");
+
+    println!("Double of input is {}", number*2);
+}
+____________________________________________________________________________
+The trim function will trim all spaces from the input. Now we use the parse function to convert the string file to another type. Then we can add an expect
+function to give us useful output during errors.
+
+Yay! We have reached the end.
