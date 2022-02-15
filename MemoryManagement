@@ -1,0 +1,19 @@
+In many, programming languages, you don't have to deal with memory management.
+This has many benefits but also some steep drawbacks. Rust gives you control
+while being very memory safe.
+
+Stack
+_____
+When learning stack we must think of a stack of paper. The main function
+is first in the stack, and function 1 and 2 follow it. The top of the stack
+gets executed first (function 2) and the beginning of the stack last (main).
+It is a simple last in first out rule. Once the code in that function
+is done executing the piece of paper is destroyed until it is done with
+every function. Then the stack is empty. Realistically, without
+the paper analogy, each function will have a block of memory to it. 
+All the function calls inside the main function will be stacked like a stack of paper. Last in first out, just like a stack of paper. Now, there's
+a small problem with stack. Stack is determined on compile, so it already knows
+everything when the program compiles. However, what if you had an empty string
+that you wanted the user to input? You wouldn't know how big it would be on
+compile so there's the heap for that. The heap and stack are fundamentally
+different.
