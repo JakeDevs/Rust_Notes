@@ -16,4 +16,46 @@ a small problem with stack. Stack is determined on compile, so it already knows
 everything when the program compiles. However, what if you had an empty string
 that you wanted the user to input? You wouldn't know how big it would be on
 compile so there's the heap for that. The heap and stack are fundamentally
-different.
+different. One more thing, the pointer is storing a memory address to a location
+in the memory then it's called a pointer.
+
+
+Scope
+_____
+Scope is the part of the code that a variable is going to be accessible. 
+For example:
+
+fn main() {
+let a = String::new();
+}
+
+The variable a is only available in the main function, so that is the scope
+of the a variable.
+
+Heap
+____
+A pointer is a variable that points to a memory location. In programmng there is
+dynamic storage. We have a place for this called the heap. The heap is basicallylimitless because it needs to be dynamic if the value of the string changes
+throughout the program.
+
+Ownership
+_________
+There are 3 rules to ownership.
+
+1. Each value in Rust has a variable and that's called its onwer.
+2. There can only be one owner at a time.
+3. When the value goes out of scope, the owner will be dropped.
+
+Lets play around with different ways of initializing variables to further
+understand ownership.
+Ex:
+
+fn main() {
+let num1 = 5;
+let num2 = num1;
+println("num1 = {} and num2 = {}",num1,num2);
+}
+
+Lets break down what's really happening here.
+The value of num1 is being copied in to a seperate memory space for num2.
+They are completely seperate, so we are not breaking ownership rules.
