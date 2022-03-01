@@ -1,0 +1,31 @@
+Arrays are simply just a list of *similar* data. The similar is important
+because all of the data in arrays are of the same data type.
+
+Ex:
+
+let numList = [1,2,3,4,5];
+
+When using arrays we use square brackets. Notice how they are all the same data type. If we tried to put a string in there we would get a mismatched types
+error. However, we can make an array of only strings because they're all the
+same datatype.
+
+Ex: 
+
+let monthList = ["January","February","March"];
+
+You can also specify the datatype of arrays.
+
+Ex:
+
+let = numList2:[i32;5] = [1,2,3,4,5];
+
+Here we are specifying the datatype of the array to i32 and specifying the number of elements inside the array. There is 5 elements in this array. If you do notmatch the number of elements in the array you will get a mismatched types
+
+We can also access the members of an array.
+
+Ex:
+
+println!("{}"),numList[0]);
+
+The number inside the brackets is the position of the elements. Here
+we are accessing the first element with 0. Counting arrays starts with 0 not 1.

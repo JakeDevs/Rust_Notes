@@ -1,0 +1,25 @@
+Today we will discuss different ways of using arrays. Traversing is the term
+used when accessing different elements of an array.
+
+If we want to access all of the elements within an array then it would be very difficult to manually print all of the elements. However there is an easier way to do it.
+
+Ex:
+
+let a1:[i32;5] = [1,2,3,4,5];
+
+let mut index = 0;
+
+while index<5 {
+println!("{}",a1[index];
+
+index = index + 1
+
+}
+
+Now we can also access the different elements in different ways. For example,
+if we change the index = index +1 to +2 then it would only print every other
+element in the array ex
+
+1 3 5
+
+This can be useful for specific tasks.
