@@ -1,0 +1,15 @@
+Vectors are like arrays except they use dynamic memory allocation (heap).
+
+
+Ex:
+
+let vector = vec![1,2,3,4,5]
+____________________________
+
+To print the value of a vector do the following:
+
+println!("{:?}",vector;
+
+Mutability still applies to vectors, so if you want it to change throughout
+the program add the keyword mut.
+

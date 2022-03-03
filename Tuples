@@ -1,1 +1,21 @@
-Tuples are like arrays but they have one key benefit: They can contain multiple different datatypes. Arrays can only contain one datatype.
+Tuples are like arrays but with one key advantage: they can contain multiple
+data types.
+
+Ex:
+
+
+ let s = (1,2.5,"hello"); 
+
+Notice how we have an integer, float, and string.
+3 different data types.
+
+To access elements in a tuple you can:
+
+println!("{}",t.3);
+
+here were are pointed to the 3rd element in the tuple so it will print hello.
+You can also specify data types for a tuple.
+
+Ex:
+
+let t1:(i8,f32) = (1,2.5);
