@@ -1,0 +1,26 @@
+There are two types of errors. One is the recoverable error, and the other
+is unrecoverable error. Unrecoverable errors are those that crash your
+program. The memory that was used by the program now has to be cleared by
+the operating system. And recoverable errors can be managed by the programmer.
+We are predicting what type of error can happen, and we are managing it in such
+a way so that our application does not crash.
+
+An example of an unrecoverable error is if we create a vector with the elements
+1,2,3 and try to access the 100th element. Obviously, the 100th element doesn't
+exist so the program would crash. This is because the vector uses the heap,
+dynamic memory, so the program can't tell on compile.
+
+You can simulate an unrecoverable error with the panic macro.
+
+Ex:
+
+panic!("This should not have happened");
+
+________________________________________
+
+Now we will talk about recoverable errors. Most errors aren't bad enough to 
+cause the program to completely crash. For example if you are trying to access
+a file and the file doesn't exist, instead of terminating the program you
+can create the file. Some other ways of handling errors is to using .expect
+and .unwrap. .except lets you use a custom error message for more detail while
+.unwrap throws the default errror message if your program were to fail. This is great to use if you're expecting an error. 
