@@ -9,4 +9,10 @@ enum Drink {
 
 ________________
 Now, the enum is by default given values 0,1,2 for small med large and so on.
-However, if we tried to print this we would get an error
+However, if we tried to print this we would get an error. This is where the as
+keyword comes in, commonly used to turn primitive times into other primitive
+types.
+
+Ex:
+
+println!("{}",burger_size as u32);
