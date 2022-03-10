@@ -1,0 +1,12 @@
+To understand enums think of going into a store and getting a drink.
+There is small medium and large. Enums are how we would translate this.
+
+enum Drink {
+	Small,
+	Medium,
+	Large
+	}
+
+________________
+Now, the enum is by default given values 0,1,2 for small med large and so on.
+However, if we tried to print this we would get an error

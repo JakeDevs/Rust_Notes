@@ -1,0 +1,32 @@
+Functions can be created inside structures.
+Functions inside structures are called methods.
+
+Ex: struct Rectangle {
+	width: u32,
+	height: u32,
+}
+
+impl Rectangle {
+	fn area(&self) -> u32 {
+	self.width * self.height
+	}
+
+}
+
+______________________
+The most important thing to remember is the self parameter.
+It is a reference to the actual structure.
+Okay, so now we know how to add functions to a structure, lets talk about how
+we can actually use them.
+
+As you can see in the code above, the width and the height variables do not have values assigned to them. So now we can do that in the main function.
+fn main() {
+let rect1 = Rectangle {
+	width:20,
+	height:30
+	}
+
+	println!("{}", rect1.area());
+	This displays the area of the rectangle.
+
+}
