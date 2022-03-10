@@ -1,0 +1,36 @@
+The match keyword is similar to the switch statement in C.
+The first arm that matches is evaluated.
+
+Ex:
+
+fn main() {
+    enum Burger {
+        Small,
+        Medium,
+        Large,
+    }
+
+    let burger_size = Burger::Large;
+
+    match burger_size {
+        Burger::Small => {
+            println!("Small burger is ready");
+        }
+        Burger::Medium => {
+            println!("Medium burger is ready");
+        }
+        Burger::Large => {
+            println!("Large burger is ready");
+        }
+    }
+}
+___________________________
+Here we are using a match statement to evaluate burger size.
+The burger_size variable has the value burger large.
+So we add small, medium and large to the match statement and it evaluates
+the first value that matches. Here, the large value matches so the output
+will be "Large burger is ready". Enums and match work strongly together.
+If you add an extra variant (variant is the word for the inputs inside the enum)
+like ExtraLarge, and don't add it to the match statement then you will get an
+error. This is the compiler forcing you to write safe code.
+

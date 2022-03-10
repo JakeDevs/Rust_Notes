@@ -16,3 +16,5 @@ types.
 Ex:
 
 println!("{}",burger_size as u32);
+
+Enums also have other very important uses such as error handling.
