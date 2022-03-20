@@ -1,1 +1,26 @@
+Sometimes we need a loop to run but only if a condition is true. This is where the while loop comes in. When the condition is no longer true, the loop breaks. 
+You can do this with a normal loop with loop, if, else, and break but this isn'toptimal and the while loop is much cleaner in the sense that it is shorter.
 
+Ex: 
+
+fn main() {
+    let tup = [1,2,3,4,5];
+
+    let mut index =0;
+
+    while index <5 {
+        println!("{}",tup[index]);
+
+        index = index + 1;
+    }
+}
+
+There is also the for loop. The for loop is considered by many Rustaceans the
+most useful loop in rust. 
+
+Ex:
+ for number in (1..4).rev() {
+        println!("{}", number)
+_____________________________
+For every number the range of 1 to 4, the program will iterate the value for 
+every element in the collection.
